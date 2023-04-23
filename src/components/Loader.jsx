@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import { Html, useProgress } from "@react-three/drei";
 
 const Loader = () => {
-  return (
-    <div>Loader</div>
-  )
-}
+  return <div>Loader</div>;
+};
 
-export default Loader
+export default Loader;
