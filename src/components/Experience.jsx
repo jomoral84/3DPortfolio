@@ -55,7 +55,7 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionHeadText}>Mis proyectos</p>
+        <p className={styles.sectionSubText}>Mis proyectos</p>
         <h2 className={styles.sectionHeadText}>Trabajo1</h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
