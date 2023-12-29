@@ -70,8 +70,7 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75 bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Estamos en contacto</p>
-        <h3 className={styles.sectionHeadText}>Contacto.</h3>
+        <h3 className={styles.sectionHeadText}>Contacto</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
