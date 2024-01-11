@@ -47,7 +47,7 @@ const About = () => {
       >
         Este es un parrafo de prueba en el que contiene informacion para leer
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-40">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

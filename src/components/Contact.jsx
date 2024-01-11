@@ -14,6 +14,7 @@ import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -29,39 +30,40 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefualt();
+    e.preventDefault();
+
     setLoading(true);
 
     emailjs
       .send(
-        "service_kcgle8t",
+        "service_jibil8i",
         "template_j31qy1e",
         {
           from_name: form.name,
           to_name: "Nicolas",
           from_email: form.email,
-          to_email: "jomoral2013@gmail.com",
+          to_mail: "jomoral2013@gmail.com",
           message: form.message,
         },
         "VN3iIw2vWblpKzFFy"
       )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Gracias por contactarse. Responderé lo mas rapido posible");
+      .then((response) => {
+        setLoading(false);
+        console.log("Mail enviado!", response);
+        alert("Gracias por contactarse. Responderé lo mas rapido posible");
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Hubo un error");
-        }
-      );
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+
+      .catch((error) => {
+        setLoading(false);
+        console.log("Error", error);
+        alert("Hubo un error");
+      });
   };
 
   return (
