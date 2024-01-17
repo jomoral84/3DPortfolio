@@ -45,7 +45,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Este es un parrafo de prueba en el que contiene informacion para leer
+        Soy un desarrollador Full Stack con experiencia en la creación de aplicaciones web mediante el uso de lenguajes como JavaScript, Java, PHP y frameworks como React, React Native, AngularJS y Node.js. Además, cuento con sólidos conocimientos tanto en bases de datos relacionales SQL (MySQL) como no relacionales (Mongo DB). También otras tecnologías como Github, GitLab y Docker. 
+Mi dedicación y pasión por la tecnología lo reflejo en mi constante búsqueda de aprendizaje y mejora de mis habilidades técnicas. Estoy enfocado en ofrecer soluciones eficientes y de alta calidad para abordar los desafíos que se presentan. Considero que la innovación y la excelencia técnica son fundamentales en el campo del desarrollo de software, y estoy comprometido a mantenerme actualizado con las últimas tendencias y prácticas.
+
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-40">
         {services.map((service, index) => (
