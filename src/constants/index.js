@@ -27,6 +27,8 @@ import {
   angular,
   php,
   cnrt,
+  cmsphp,
+  superfoods,
 } from "../assets";
 
 export const navLinks = [
@@ -209,6 +211,48 @@ const projects = [
       },
     ],
     image: jobit,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Super Foods",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: superfoods,
+    source_code_link: "https://superfooodsdemo.netlify.app/",
+  },
+  {
+    name: "Cms Php",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cmsphp,
     source_code_link: "https://github.com/",
   },
   {

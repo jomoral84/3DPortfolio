@@ -22,7 +22,10 @@ const ProjectCard = ({
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-[#031b59] p-5 rounded-2xl sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div
+          className="relative w-full h-[230px] cursor-pointer"
+          onClick={() => window.open(source_code_link, "_blank")}
+        >
           <img
             src={image}
             alt={name}
@@ -66,7 +69,6 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-    
         <h2 className={`${styles.sectionHeadText}`}>Mis Proyectos</h2>
       </motion.div>
 
@@ -75,7 +77,9 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Aquí presento diversos proyectos realizados utilizando distintas tecnologías, con el propósito de exhibir las habilidades y conocimientos que he adquirido.
+          Aquí presento diversos proyectos realizados utilizando distintas
+          tecnologías, con el propósito de exhibir las habilidades y
+          conocimientos que he adquirido.
         </motion.p>
       </div>
 

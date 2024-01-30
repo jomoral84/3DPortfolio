@@ -17,8 +17,8 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import angular from "./tech/angular.png";
-import php from "./tech/php.png"
-import java from "./tech/java.png"
+import php from "./tech/php.png";
+import java from "./tech/java.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -33,6 +33,8 @@ import cnrt from "./company/cnrt.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import cmsphp from "./cmsphp.png";
+import superfoods from "./superfoods.png";
 
 export {
   logo,
@@ -66,5 +68,7 @@ export {
   cnrt,
   php,
   angular,
-  java
+  java,
+  cmsphp,
+  superfoods,
 };
